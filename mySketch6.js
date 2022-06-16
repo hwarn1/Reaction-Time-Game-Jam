@@ -18,7 +18,7 @@ var times = [];
 var sum;
 var average;
 var delayStart;
-var show = 1;
+var show = true;
 
 
 function Text() {
@@ -33,7 +33,7 @@ function Text() {
 
 function draw() {
   
-  if (show === 1) {
+  if (show === false) {
   reDraw();
   }
   
@@ -46,7 +46,7 @@ function mouseClicked() {
   if (mouseX >= newBox.x && mouseX <= newBox.x+50 && mouseY >= newBox.y && mouseY <= newBox.y+50) {
     clickedTime = Date.now();
     delayStart = Date.now();
-    show = 1;
+    show = false;
 
     background(100,100,250);
 
@@ -79,7 +79,7 @@ function reDraw() {
     newBox.update(newBox);
     newBox.display(newBox);
     
-    show = 0;
+    show = true;
   }
   
 }
