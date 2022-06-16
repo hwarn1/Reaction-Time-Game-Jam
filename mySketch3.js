@@ -14,6 +14,7 @@ var Box = function(x,y) {
   //this.color = color;
 }
 
+//all different boxes
 newBox = new Box(50,50);
 newBox2 = new Box(100,100);
 newBox3 = new Box(300,100);
